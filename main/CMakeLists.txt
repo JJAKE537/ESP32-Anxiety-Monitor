@@ -1,0 +1,19 @@
+idf_component_register(SRCS 
+                            "app_FreeRtos.c"
+                            "app_ai_client.c"
+                       PRIV_REQUIRES 
+                            spi_flash 
+                            app_common 
+                            ppi_process
+                            app_ui
+                            freertos
+                            esp_adc
+                            esp_driver_gpio
+                            esp_timer
+                            log
+                            lvgl
+                            esp_http_client
+                            json
+                            lwip
+                       INCLUDE_DIRS 
+                            ".")

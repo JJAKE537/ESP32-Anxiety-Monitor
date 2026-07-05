@@ -1,0 +1,29 @@
+idf_component_register(SRCS 
+                            "app_lvgl.c"
+                            "app_touch_gt911.c"
+                            "app_ui_font_16.c"
+                            "app_ui_history.c"
+                            "app_ui_config.c"
+                            "app_ui_statics.c"
+                            "app_ui_about.c"
+                       PRIV_REQUIRES 
+                             app_common
+                             ppi_process
+                             freertos
+                             esp_driver_gpio
+                             esp_driver_i2c
+                             esp_timer
+                             esp_lcd
+                             bootloader_support
+                             lvgl
+                             esp_lcd_ek79007
+                             esp_lcd_touch
+                             esp_lcd_touch_gt911
+                             esp_driver_ledc
+                       INCLUDE_DIRS 
+                             "include"
+                       EMBED_FILES
+                             "fonts/ai_chinese.ttf"
+                             )
+
+target_compile_options(${COMPONENT_LIB} PRIVATE -Wno-deprecated-declarations)

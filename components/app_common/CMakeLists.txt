@@ -1,0 +1,14 @@
+idf_component_register(SRCS 
+                            "app_rtc.c"
+                       PRIV_REQUIRES 
+                            esp_adc 
+                            esp_driver_gpio
+                            freertos
+                            nvs_flash
+                            esp_netif
+                            esp_event
+                            esp_wifi
+                            lwip
+                            log
+                       INCLUDE_DIRS 
+                            "include")

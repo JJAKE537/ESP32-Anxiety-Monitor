@@ -1,0 +1,7 @@
+dependencies:
+  lvgl/lvgl: "9.4.0"
+  esp_lcd_ek79007: "^1.0.0"
+  espressif/esp_lcd_touch: "1.2.1"
+  espressif/esp_lcd_touch_gt911: "1.2.0~2"
+  espressif/esp_wifi_remote: "0.14.2"
+  espressif/esp_hosted: "2.0.13"
